@@ -1,0 +1,22 @@
+gitops-runtime:
+  app-proxy:
+    env:
+      HELM_REPOSITORY: oci://quay.io/codefresh/cf-runtime
+  event-reporters:
+    workflow:
+      serviceAccount:
+        name: codefresh-sa
+  global:
+    codefresh:
+      url: https://hermes-onprem-test.cf-op.com
+      userToken:
+        secretKeyRef:
+          name: codefresh-user-token
+          key: token
+    runtime:
+      ingress:
+        className: nginx
+        enabled: true
+        hosts:
+          - alina-1.cd-team.cf-cd.com
+      name: codefresh-onprem
