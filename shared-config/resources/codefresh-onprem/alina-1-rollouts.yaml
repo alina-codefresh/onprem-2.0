@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alina-1-rollouts
+  labels:
+    codefresh.io/entity: component
+    codefresh.io/internal: "false"
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    chart: argo-rollouts
+    repoURL: https://codefresh-io.github.io/argo-helm
+    targetRevision: 2.32.5-2-cap-init
+    helm:
+      releaseName: argo-rollouts
+  destination:
+    namespace: default
+    server: https://2BE10C411B2D644E854402CAD9A66DA5.gr7.us-east-1.eks.amazonaws.com
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      prune: true
+      selfHeal: true
