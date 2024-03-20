@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-onprem/*.yaml,runtimes/codefresh-onprem/**/*.yaml,codefresh-onprem-managed-cluster-alina-1-cm.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,codefresh-onprem-managed-cluster-alina-1-cm.yaml,runtimes/codefresh-onprem/**/*.yaml,runtimes/codefresh-onprem/*.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/alina-codefresh/onprem-2.0.git
