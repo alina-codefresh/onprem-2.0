@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,codefresh-onprem/alina-1-rollout-reporter.yaml,codefresh-onprem/alina-1-rollouts.yaml,codefresh-onprem/cf-gitops-runtime.yaml,codefresh-onprem/codefresh-onprem.yaml,codefresh-onprem/scale-test-rollout-reporter.yaml,codefresh-onprem/scale-test-rollouts.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/codefresh-onprem/**/*.yaml,runtimes/codefresh-onprem/*.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,codefresh-onprem/alina-1-rollout-reporter.yaml,codefresh-onprem/alina-1-rollouts.yaml,codefresh-onprem/cf-gitops-runtime.yaml,codefresh-onprem/scale-test-rollout-reporter.yaml,codefresh-onprem/scale-test-rollouts.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/codefresh-onprem/**/*.yaml,runtimes/codefresh-onprem/*.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/alina-codefresh/onprem-2.0.git
