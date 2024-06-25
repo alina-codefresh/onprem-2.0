@@ -1,0 +1,19 @@
+gitops-runtime:
+  global:
+    codefresh:
+      accountId: 647096c7ca319be0c3596d24
+      url: https://hermes-onprem-test.cf-op.com
+      userToken:
+        secretKeyRef:
+          name: codefresh-user-token
+          key: token
+    runtime:
+      ingress:
+        className: nginx-internal
+        enabled: true
+        hosts:
+          - alina-hermes.rnd-sandbox.cf-infra.com
+        protocol: https
+      name: test-date
+  installer:
+    skipValidation: true
