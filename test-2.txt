@@ -1,3 +1,4 @@
 test
 br test
 br exclude
+regex test
