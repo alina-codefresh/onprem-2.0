@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/test-date/**/*.yaml,runtimes/test-date/*.yaml,test-date/cf-gitops-runtime.yaml,test-date/test-4.yaml,test-date/test-temporary.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/test-date/**/*.yaml,runtimes/test-date/*.yaml,test-date/cf-gitops-runtime.yaml,test-date/test-4.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/alina-codefresh/onprem-2.0.git
